@@ -2,7 +2,7 @@ language: java
 idk:
   - openjdk8
 
-script: ./mvnw clean install
+script: chmod + x mvnw clean install
 
 jobs:
   include:
