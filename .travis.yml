@@ -4,5 +4,10 @@ idk:
 
 script: ./mvnw clean install
 
+jobs:
+  include:
+    - stage: Test
+      script: ./mvnw clean test
+
 notifications:
   email: ss_monfared@ymail.com
