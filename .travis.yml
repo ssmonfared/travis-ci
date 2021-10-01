@@ -1,0 +1,8 @@
+language: java
+idk:
+  - openjdk8
+
+script: ./mvnw clean install
+
+notifications:
+  email: ss_monfared@ymail.com
