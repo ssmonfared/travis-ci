@@ -1,13 +1,14 @@
 language: java
-idk:
+jdk:
   - openjdk8
 
-script: chmod + x mvnw clean install
+script: ./mvnw clean install
+
 
 jobs:
   include:
     - stage: Test
       script: ./mvnw clean test
 
-notifications:
+notification:
   email: ss_monfared@ymail.com
