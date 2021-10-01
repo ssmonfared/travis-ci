@@ -1,17 +1,10 @@
 language: java
 sudo: true
-jdk:
-  - openjdk8
-
-before_script:
+dist: trusty
+jdk: oraclejdk9
+addons:
+  apt:
+    packages:
+      - oracle-java9-installer
+before_install:
   - chmod +x mvnw
-
-
-
-jobs:
-  include:
-    - stage: Test
-      script: ./mvnw clean test
-
-notification:
-  email: ss_monfared@ymail.com
